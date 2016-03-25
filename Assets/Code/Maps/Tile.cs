@@ -17,7 +17,7 @@ public class Tile : MonoBehaviour {
     void OnMouseOver() {
         this.changeMaterialColor(Color.red);
         if(Input.GetMouseButtonDown(0)) {
-            References.getReferences("Fight", true).GetComponent<Fight>().currentPlayer.moveEntity((int)this.transform.position.x, (int)this.transform.position.y);
+            References.getReferences("Fight", true).GetComponent<Fight>().currentPlayer.moveEntity((int)this.transform.position.x, (int)this.transform.position.z);
         }
     }
 

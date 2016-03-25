@@ -54,9 +54,6 @@ namespace IA {
                 reversePath.Add(new Vector2(xPrevious, yPrevious));
                 currentNode = nodes[currentNode.previous];
             }
-            /*int yCur = Map.YValue(currentNode.value);
-            int xCur = Map.XValue(currentNode.value);
-            reversePath.Add(new Vector2(xCur, yCur));*/
             return reversePath;
         }
 

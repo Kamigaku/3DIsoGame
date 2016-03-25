@@ -49,16 +49,15 @@ namespace Mechanics {
         }
 
         public void endTurn() {
-            if(this._playOrder.Count > 0) {
-                this._playOrder[this._currentIteration].canPlay = false;
-                this._currentIteration += 1;
-                if(this._currentIteration >= this._playOrder.Count) {
-                    this._currentIteration = 0;
-                }
-                this._playOrder[this._currentIteration].canPlay = true;
-                this.currentPlayer = this._playOrder[this._currentIteration];
-                this._currentTime = 0f;
+            this._playOrder[this._currentIteration].canPlay = false;
+            this._currentIteration += 1;
+            if(this._currentIteration >= this._playOrder.Count) {
+                this._currentIteration = 0;
             }
+            this._playOrder[this._currentIteration].canPlay = true;
+            this.currentPlayer = this._playOrder[this._currentIteration];
+            Debug.Log("Fin du tour ! Au tour de " + this.currentPlayer.entityName);
+            this._currentTime = 0f;
         }
 
     }

@@ -8,7 +8,7 @@ namespace Entity.Ai {
     class Gobelin : Mob {
 
         void Start() {
-            this._statistique = new EntityStatistique(5, 1, 2);
+            this._statistique = new EntityStatistique(5, 6, 2);
             baseLoad();
             this.entityName = "Gobelin";
         }

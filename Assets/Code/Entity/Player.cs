@@ -12,8 +12,10 @@ namespace Utility {
 
         private float previousTime = 0f;
 
+        private short _displayPath = 0;
+
         void Start () {
-            this._statistique = new EntityStatistique(10, 7, 3);
+            this._statistique = new EntityStatistique(10, 1, 4);
             baseLoad();
         }
 
@@ -24,6 +26,19 @@ namespace Utility {
 			if (this._statistique.healthPoint <= 0) {
 				Destroy(this.gameObject);
 			}
+            if(this._isMainPlayer) {
+                if(Input.GetKeyDown(KeyCode.X))
+                    this._displayPath = 1;
+                if(Input.GetKeyUp(KeyCode.X))
+                    this._displayPath = 2;
+                if(this._displayPath == 1)
+                    OnMouseOver();
+                else if(this._displayPath == 2) {
+                    this._displayPath = 0;
+                    OnMouseExit();
+                }
+                    
+            }
 		}
 
         /*private void doAction(GameObject affectedGo, Vector3 position) {

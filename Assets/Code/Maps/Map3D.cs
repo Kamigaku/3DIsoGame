@@ -143,6 +143,8 @@ public class Map3D : MonoBehaviour {
         player.AddComponent<Player>();
         player.GetComponent<AEntity>().entityName = playerName;
         player.GetComponent<AEntity>().groupId = group;
+        player.GetComponent<AEntity>().x = x;
+        player.GetComponent<AEntity>().y = y;
         this._groupPlayers[group].Add(player);
         if (isMainPlayer) {
             player.name = "MainPlayer";
@@ -161,5 +163,7 @@ public class Map3D : MonoBehaviour {
         }
         this._groupMobs[group].Add(mob);
         MobFactory.addComponentToMob(mob.transform.gameObject, mobType);
+        mob.GetComponent<AEntity>().x = x;
+        mob.GetComponent<AEntity>().y = y;
     }
 }

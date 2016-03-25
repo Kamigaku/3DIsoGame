@@ -18,8 +18,8 @@ namespace HUD {
         }
 
         public void OnClick() {
-            if(this._canPassTurn)
-                References.getReferences("FightHandler").GetComponent<Fight>().endTurn();
+            //if(this._canPassTurn)
+                References.getReferences("Fight", true).GetComponent<Fight>().endTurn();
         }
     }
 }
