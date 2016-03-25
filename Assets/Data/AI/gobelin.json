@@ -1,0 +1,30 @@
+{
+	"FunctionNode": {
+		"ending": "true",
+		"call": "isAPlayerClose",
+		"parameters": [
+			{
+				"type": "System.Int32",
+				"option": "Defined as",
+				"value": "0"
+			}
+		],
+		"results": [
+			{
+				"option": "0",
+				"value": ""
+			}
+		]
+	},
+	"FunctionNode": {
+		"beginning": "true",
+		"call": "isAnAllyClose",
+		"parameters": [
+			{
+				"type": "System.Int32",
+				"option": "Defined as",
+				"value": "0"
+			}
+		]
+	}
+}

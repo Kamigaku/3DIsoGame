@@ -1,0 +1,49 @@
+{
+    "Fire Ball": {
+        "image": "card/fireBall.png",
+        "range": 5,
+        "typeRange": "circle",
+        "damage": 1,
+        "type": "fire",
+        "category": "offensive",
+        "description": "A basic fire ball.",
+        "status": {
+            "burning": true
+        }
+    },
+    "Slash": {
+        "image": "card/slash.png",
+        "range": 1,
+        "typeRange": "line",
+        "damage": 3,
+        "type": "normal",
+        "category": "offensive",
+        "description": "A basic attack."
+    },
+    "Block": {
+        "image": "card/block.png",
+        "category": "defensive",
+        "description": "A basic defense.",
+        "bonus": {
+            "defense": 2
+        }
+    },
+    "Heal": {
+        "image": "card/heal.png",
+        "category": "support",
+        "description": "A basic heal.",
+        "typeRange": "circle",
+        "range": 4,
+        "bonus": {
+            "hp": 2
+        }
+    },
+    "Footstep": {
+        "image": "card/footstep.png",
+        "category": "mouvement",
+        "description": "Move some step forward.",
+        "typeRange": "circle",
+        "range": 3
+    }
+
+}

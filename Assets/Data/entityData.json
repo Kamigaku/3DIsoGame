@@ -1,0 +1,19 @@
+{
+	"Forest" : {
+		"image" : "forest.png",
+		"bonus": "+1 to defense",
+        "malus": "-1 to mouvement",
+        "size": 4.5,
+		"stats": {
+			"def": 1,
+			"mov": -1
+		}
+	},
+	"Ground" : {
+		"image" : "Ground.png",
+		"bonus": "",
+        "malus": "",
+        "size": 2.5
+	}
+
+}
